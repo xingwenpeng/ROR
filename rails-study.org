@@ -1,0 +1,19 @@
+* rails
+** 搭建ruails环境
+*** ubuntu14.04解决libssdev
+    更新软件源->更新->前三项打勾，更新
+    sudo apt-get update && sudo apt-get upgrade
+*** 安装rvm
+    \curl -sSL https://get.rvm.io | bash
+*** 安装ruby
+    rvm use --install --default 2.1
+    ruby -v
+*** 安装rails
+    默认的源里链接不上，一些软件下载不了，删除默认，换成淘宝的
+    gem sources -r https://rubygems.org/
+    gem source -a http://ruby.taobao.org
+    gem install rails
+    rails -v
+    gem env
+*** 安装nodejs
+    sudo apt-get install nodejs
